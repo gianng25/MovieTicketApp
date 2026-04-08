@@ -9,6 +9,7 @@ drawable bg_button
 drawable bg_input
 drawable ic_ticket
 drawable poster_placeholder
+id btnBack
 id btnBook
 id btnConfirmBooking
 id btnGoRegister

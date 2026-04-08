@@ -1,38 +1,42 @@
 [
     {
-        "merged": "com.example.movieticketfirebase.app-mergeDebugResources-42:/layout/activity_movie_list.xml",
-        "source": "com.example.movieticketfirebase.app-main-45:/layout/activity_movie_list.xml"
+        "merged": "C:\\Users\\GIANG\\.gradle\\daemon\\9.0-milestone-1\\com.example.movieticketfirebase.app-mergeDebugResources-42:\\layout\\activity_booking.xml",
+        "source": "C:\\Users\\GIANG\\.gradle\\daemon\\9.0-milestone-1\\com.example.movieticketfirebase.app-main-45:\\layout\\activity_booking.xml"
     },
     {
-        "merged": "com.example.movieticketfirebase.app-mergeDebugResources-42:/layout/activity_showtime_list.xml",
-        "source": "com.example.movieticketfirebase.app-main-45:/layout/activity_showtime_list.xml"
+        "merged": "C:\\Users\\GIANG\\.gradle\\daemon\\9.0-milestone-1\\com.example.movieticketfirebase.app-mergeDebugResources-42:\\layout\\item_movie.xml",
+        "source": "C:\\Users\\GIANG\\.gradle\\daemon\\9.0-milestone-1\\com.example.movieticketfirebase.app-main-45:\\layout\\item_movie.xml"
     },
     {
-        "merged": "com.example.movieticketfirebase.app-mergeDebugResources-42:/layout/item_ticket.xml",
-        "source": "com.example.movieticketfirebase.app-main-45:/layout/item_ticket.xml"
+        "merged": "C:\\Users\\GIANG\\.gradle\\daemon\\9.0-milestone-1\\com.example.movieticketfirebase.app-mergeDebugResources-42:\\layout\\item_ticket.xml",
+        "source": "C:\\Users\\GIANG\\.gradle\\daemon\\9.0-milestone-1\\com.example.movieticketfirebase.app-main-45:\\layout\\item_ticket.xml"
     },
     {
-        "merged": "com.example.movieticketfirebase.app-mergeDebugResources-42:/layout/activity_register.xml",
-        "source": "com.example.movieticketfirebase.app-main-45:/layout/activity_register.xml"
+        "merged": "C:\\Users\\GIANG\\.gradle\\daemon\\9.0-milestone-1\\com.example.movieticketfirebase.app-mergeDebugResources-42:\\layout\\activity_showtime_list.xml",
+        "source": "C:\\Users\\GIANG\\.gradle\\daemon\\9.0-milestone-1\\com.example.movieticketfirebase.app-main-45:\\layout\\activity_showtime_list.xml"
     },
     {
-        "merged": "com.example.movieticketfirebase.app-mergeDebugResources-42:/layout/item_showtime.xml",
-        "source": "com.example.movieticketfirebase.app-main-45:/layout/item_showtime.xml"
+        "merged": "C:\\Users\\GIANG\\.gradle\\daemon\\9.0-milestone-1\\com.example.movieticketfirebase.app-mergeDebugResources-42:\\layout\\activity_movie_list.xml",
+        "source": "C:\\Users\\GIANG\\.gradle\\daemon\\9.0-milestone-1\\com.example.movieticketfirebase.app-main-45:\\layout\\activity_movie_list.xml"
     },
     {
-        "merged": "com.example.movieticketfirebase.app-mergeDebugResources-42:/layout/activity_booking.xml",
-        "source": "com.example.movieticketfirebase.app-main-45:/layout/activity_booking.xml"
+        "merged": "C:\\Users\\GIANG\\.gradle\\daemon\\9.0-milestone-1\\com.example.movieticketfirebase.app-mergeDebugResources-42:\\layout\\activity_ticket_list.xml",
+        "source": "C:\\Users\\GIANG\\.gradle\\daemon\\9.0-milestone-1\\com.example.movieticketfirebase.app-main-45:\\layout\\activity_ticket_list.xml"
     },
     {
-        "merged": "com.example.movieticketfirebase.app-mergeDebugResources-42:/layout/activity_login.xml",
-        "source": "com.example.movieticketfirebase.app-main-45:/layout/activity_login.xml"
+        "merged": "C:\\Users\\GIANG\\.gradle\\daemon\\9.0-milestone-1\\com.example.movieticketfirebase.app-mergeDebugResources-42:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\GIANG\\.gradle\\daemon\\9.0-milestone-1\\com.example.movieticketfirebase.app-main-45:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\GIANG\\.gradle\\daemon\\9.0-milestone-1\\com.example.movieticketfirebase.app-mergeDebugResources-42:\\layout\\activity_register.xml",
+        "source": "C:\\Users\\GIANG\\.gradle\\daemon\\9.0-milestone-1\\com.example.movieticketfirebase.app-main-45:\\layout\\activity_register.xml"
     },
     {
         "merged": "com.example.movieticketfirebase.app-mergeDebugResources-42:/layout/activity_ticket_list.xml",
         "source": "com.example.movieticketfirebase.app-main-45:/layout/activity_ticket_list.xml"
     },
     {
-        "merged": "com.example.movieticketfirebase.app-mergeDebugResources-42:/layout/item_movie.xml",
-        "source": "com.example.movieticketfirebase.app-main-45:/layout/item_movie.xml"
+        "merged": "C:\\Users\\GIANG\\.gradle\\daemon\\9.0-milestone-1\\com.example.movieticketfirebase.app-mergeDebugResources-42:\\layout\\item_showtime.xml",
+        "source": "C:\\Users\\GIANG\\.gradle\\daemon\\9.0-milestone-1\\com.example.movieticketfirebase.app-main-45:\\layout\\item_showtime.xml"
     }
 ]

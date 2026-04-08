@@ -4,6 +4,7 @@ package com.example.movieticketfirebase.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,11 +21,15 @@ public final class ActivityTicketListBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final ImageButton btnBack;
+
+  @NonNull
   public final RecyclerView recyclerTickets;
 
-  private ActivityTicketListBinding(@NonNull LinearLayout rootView,
+  private ActivityTicketListBinding(@NonNull LinearLayout rootView, @NonNull ImageButton btnBack,
       @NonNull RecyclerView recyclerTickets) {
     this.rootView = rootView;
+    this.btnBack = btnBack;
     this.recyclerTickets = recyclerTickets;
   }
 
@@ -55,13 +60,19 @@ public final class ActivityTicketListBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnBack;
+      ImageButton btnBack = ViewBindings.findChildViewById(rootView, id);
+      if (btnBack == null) {
+        break missingId;
+      }
+
       id = R.id.recyclerTickets;
       RecyclerView recyclerTickets = ViewBindings.findChildViewById(rootView, id);
       if (recyclerTickets == null) {
         break missingId;
       }
 
-      return new ActivityTicketListBinding((LinearLayout) rootView, recyclerTickets);
+      return new ActivityTicketListBinding((LinearLayout) rootView, btnBack, recyclerTickets);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
