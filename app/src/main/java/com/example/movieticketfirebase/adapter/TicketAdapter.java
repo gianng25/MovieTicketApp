@@ -6,6 +6,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.movieticketfirebase.databinding.ItemTicketBinding;
 import com.example.movieticketfirebase.model.Ticket;
 
@@ -37,6 +38,13 @@ public class TicketAdapter extends RecyclerView.Adapter<TicketAdapter.TicketView
         holder.binding.txtShowtime.setText("Suất chiếu: " + ticket.getShowtimeText());
         holder.binding.txtSeat.setText("Ghế: " + ticket.getSeatNumber());
         holder.binding.txtPrice.setText("Giá: " + ticket.getPrice() + " VND");
+
+        // Load poster image
+        Glide.with(holder.itemView.getContext())
+                .load(ticket.getPosterUrl())
+                .placeholder(android.R.drawable.ic_menu_gallery)
+                .error(android.R.drawable.stat_notify_error)
+                .into(holder.binding.imgPoster);
     }
 
     @Override

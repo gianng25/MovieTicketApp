@@ -1,6 +1,11 @@
 package com.example.movieticketfirebase.ui;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.GridLayout;
@@ -10,12 +15,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.movieticketfirebase.databinding.ActivityBookingBinding;
 import com.example.movieticketfirebase.model.Ticket;
+import com.example.movieticketfirebase.service.NotificationReceiver;
 import com.example.movieticketfirebase.util.FirebaseRepository;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.List;
 
 public class BookingActivity extends AppCompatActivity {
@@ -48,7 +55,7 @@ public class BookingActivity extends AppCompatActivity {
         showtimeText = getIntent().getStringExtra("showtimeText");
         theaterId = getIntent().getStringExtra("theaterId");
         theaterName = getIntent().getStringExtra("theaterName");
-        posterUrl = getIntent().getStringExtra("posterUrl"); // Nhận posterUrl
+        posterUrl = getIntent().getStringExtra("posterUrl");
         price = getIntent().getLongExtra("price", 0L);
         bookedSeats = getIntent().getStringArrayListExtra("bookedSeats");
         if (bookedSeats == null) bookedSeats = new ArrayList<>();
@@ -84,7 +91,6 @@ public class BookingActivity extends AppCompatActivity {
                 button.setOnClickListener(v -> {
                     selectedSeat = seat;
                     binding.txtSelectedSeat.setText("Ghế đã chọn: " + seat);
-                    // Có thể thêm đổi màu ghế đang chọn ở đây
                 });
             }
             grid.addView(button);
@@ -106,7 +112,7 @@ public class BookingActivity extends AppCompatActivity {
         ticket.setUserId(currentUser.getUid());
         ticket.setMovieId(movieId);
         ticket.setMovieTitle(movieTitle);
-        ticket.setPosterUrl(posterUrl); // Lưu posterUrl vào ticket
+        ticket.setPosterUrl(posterUrl);
         ticket.setTheaterId(theaterId);
         ticket.setTheaterName(theaterName);
         ticket.setShowtimeId(showtimeId);
@@ -119,10 +125,53 @@ public class BookingActivity extends AppCompatActivity {
                 unused -> repository.updateBookedSeat(showtimeId, selectedSeat,
                         unused2 -> {
                             toast("Đặt vé thành công");
+                            scheduleNotification(movieTitle, showtimeText);
                             finish();
                         },
                         e -> toast("Cập nhật ghế thất bại: " + e.getMessage())),
                 e -> toast("Đặt vé thất bại: " + e.getMessage()));
+    }
+
+    private void scheduleNotification(String movieTitle, String showtime) {
+        try {
+            String[] parts = showtime.split(":");
+            int hour = Integer.parseInt(parts[0]);
+            int minute = Integer.parseInt(parts[1]);
+
+            Calendar calendar = Calendar.getInstance();
+            calendar.set(Calendar.HOUR_OF_DAY, hour);
+            calendar.set(Calendar.MINUTE, minute);
+            calendar.set(Calendar.SECOND, 0);
+
+            if (calendar.getTimeInMillis() < System.currentTimeMillis()) {
+                calendar.add(Calendar.DAY_OF_YEAR, 1);
+            }
+
+            // Nhắc trước 15 phút
+            long triggerTime = calendar.getTimeInMillis() - (15 * 60 * 1000);
+
+            AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+            Intent intent = new Intent(this, NotificationReceiver.class);
+            intent.putExtra("movieTitle", movieTitle);
+            intent.putExtra("showtime", showtime);
+
+            PendingIntent pendingIntent = PendingIntent.getBroadcast(
+                    this,
+                    (int) System.currentTimeMillis(),
+                    intent,
+                    PendingIntent.FLAG_IMMUTABLE
+            );
+
+            if (alarmManager != null) {
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                    alarmManager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, triggerTime, pendingIntent);
+                } else {
+                    alarmManager.setExact(AlarmManager.RTC_WAKEUP, triggerTime, pendingIntent);
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     private void toast(String msg) {

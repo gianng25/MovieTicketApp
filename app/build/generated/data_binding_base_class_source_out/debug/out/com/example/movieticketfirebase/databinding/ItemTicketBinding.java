@@ -4,6 +4,7 @@ package com.example.movieticketfirebase.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,6 +21,9 @@ public final class ItemTicketBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
+  public final ImageView imgPoster;
+
+  @NonNull
   public final TextView txtMovieTitle;
 
   @NonNull
@@ -34,10 +38,11 @@ public final class ItemTicketBinding implements ViewBinding {
   @NonNull
   public final TextView txtTheater;
 
-  private ItemTicketBinding(@NonNull CardView rootView, @NonNull TextView txtMovieTitle,
-      @NonNull TextView txtPrice, @NonNull TextView txtSeat, @NonNull TextView txtShowtime,
-      @NonNull TextView txtTheater) {
+  private ItemTicketBinding(@NonNull CardView rootView, @NonNull ImageView imgPoster,
+      @NonNull TextView txtMovieTitle, @NonNull TextView txtPrice, @NonNull TextView txtSeat,
+      @NonNull TextView txtShowtime, @NonNull TextView txtTheater) {
     this.rootView = rootView;
+    this.imgPoster = imgPoster;
     this.txtMovieTitle = txtMovieTitle;
     this.txtPrice = txtPrice;
     this.txtSeat = txtSeat;
@@ -72,6 +77,12 @@ public final class ItemTicketBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.imgPoster;
+      ImageView imgPoster = ViewBindings.findChildViewById(rootView, id);
+      if (imgPoster == null) {
+        break missingId;
+      }
+
       id = R.id.txtMovieTitle;
       TextView txtMovieTitle = ViewBindings.findChildViewById(rootView, id);
       if (txtMovieTitle == null) {
@@ -102,7 +113,7 @@ public final class ItemTicketBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemTicketBinding((CardView) rootView, txtMovieTitle, txtPrice, txtSeat,
+      return new ItemTicketBinding((CardView) rootView, imgPoster, txtMovieTitle, txtPrice, txtSeat,
           txtShowtime, txtTheater);
     }
     String missingId = rootView.getResources().getResourceName(id);

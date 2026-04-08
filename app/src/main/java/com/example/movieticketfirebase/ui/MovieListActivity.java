@@ -35,6 +35,7 @@ public class MovieListActivity extends AppCompatActivity {
             Intent intent = new Intent(this, ShowtimeListActivity.class);
             intent.putExtra("movieId", movie.getId());
             intent.putExtra("movieTitle", movie.getTitle());
+            intent.putExtra("posterUrl", movie.getPosterUrl());
             startActivity(intent);
         });
 

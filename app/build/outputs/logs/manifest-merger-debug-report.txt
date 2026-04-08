@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:1:1-36:12
-INJECTED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:1:1-36:12
-INJECTED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:1:1-36:12
-INJECTED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:1:1-36:12
+ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:1:1-40:12
+INJECTED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:1:1-40:12
+INJECTED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:1:1-40:12
+INJECTED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:1:1-40:12
 MERGED from [androidx.databinding:viewbinding:8.2.2] C:\Users\GIANG\.gradle\caches\9.0-milestone-1\transforms\7444be6db2ee8e1d45593d1de87a7938\transformed\jetified-viewbinding-8.2.2\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\GIANG\.gradle\caches\9.0-milestone-1\transforms\ae7acab2abfd363aa41749685886fcb4\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:17:1-75:12
 MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\GIANG\.gradle\caches\9.0-milestone-1\transforms\7c9dea7f3df5d2295de64e8118b37ad5\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:2:1-26:12
@@ -120,9 +120,17 @@ MERGED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\GIANG\.grad
 MERGED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\GIANG\.gradle\caches\9.0-milestone-1\transforms\83a0a8175656244a3bcf1c2814181daa\transformed\jetified-firebase-messaging-24.0.0\AndroidManifest.xml:23:5-77
 	android:name
 		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:4:22-74
+uses-permission#android.permission.SCHEDULE_EXACT_ALARM
+ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:5:22-76
+uses-permission#android.permission.USE_EXACT_ALARM
+ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:6:5-74
+	android:name
+		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:6:22-71
 application
-ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:6:5-35:19
-INJECTED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:6:5-35:19
+ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:8:5-39:19
+INJECTED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:8:5-39:19
 MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\GIANG\.gradle\caches\9.0-milestone-1\transforms\ae7acab2abfd363aa41749685886fcb4\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:28:5-73:19
 MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\GIANG\.gradle\caches\9.0-milestone-1\transforms\ae7acab2abfd363aa41749685886fcb4\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:28:5-73:19
 MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\GIANG\.gradle\caches\9.0-milestone-1\transforms\7c9dea7f3df5d2295de64e8118b37ad5\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:13:5-24:19
@@ -190,65 +198,71 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\GI
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.0] C:\Users\GIANG\.gradle\caches\9.0-milestone-1\transforms\cfbff851f2a2e8fe9ee5bfca09966f52\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:8:9-46
+		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:10:9-46
 	android:roundIcon
-		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:10:9-54
+		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:12:9-54
 	android:icon
-		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:7:9-35
+		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:12:9-57
+		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:14:9-57
 activity#com.example.movieticketfirebase.ui.TicketListActivity
-ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:14:9-59
+ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:16:9-59
 	android:name
-		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:14:19-56
+		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:16:19-56
 activity#com.example.movieticketfirebase.ui.BookingActivity
-ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:15:9-56
+ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:17:9-56
 	android:name
-		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:15:19-53
+		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:17:19-53
 activity#com.example.movieticketfirebase.ui.ShowtimeListActivity
-ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:16:9-61
+ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:18:9-61
 	android:name
-		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:16:19-58
+		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:18:19-58
 activity#com.example.movieticketfirebase.ui.MovieListActivity
-ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:17:9-58
+ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:19:9-58
 	android:name
-		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:17:19-55
+		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:19:19-55
 activity#com.example.movieticketfirebase.ui.RegisterActivity
-ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:18:9-57
+ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:20:9-57
 	android:name
-		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:18:19-54
+		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:20:19-54
 activity#com.example.movieticketfirebase.ui.LoginActivity
-ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:19:9-26:20
+ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:21:9-28:20
 	android:exported
-		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:21:13-36
+		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:23:13-36
 	android:name
-		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:20:13-45
+		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:22:13-45
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:22:13-25:29
+ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:24:13-27:29
 action#android.intent.action.MAIN
-ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:23:17-69
+ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:25:17-69
 	android:name
-		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:23:25-66
+		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:25:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:24:17-77
+ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:26:17-77
 	android:name
-		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:24:27-74
-service#com.example.movieticketfirebase.service.MyFirebaseMessagingService
-ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:28:9-34:19
+		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:26:27-74
+receiver#com.example.movieticketfirebase.service.NotificationReceiver
+ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:30:9-91
 	android:exported
-		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:30:13-37
+		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:30:64-88
 	android:name
-		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:29:13-63
+		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:30:19-63
+service#com.example.movieticketfirebase.service.MyFirebaseMessagingService
+ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:32:9-38:19
+	android:exported
+		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:33:13-63
 intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:31:13-33:29
+ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:35:13-37:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:32:17-78
+ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:36:17-78
 	android:name
-		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:32:25-75
+		ADDED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml:36:25-75
 uses-sdk
 INJECTED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Document\PTIT 8\Mobile\MovieTicketFirebaseApp\app\src\main\AndroidManifest.xml

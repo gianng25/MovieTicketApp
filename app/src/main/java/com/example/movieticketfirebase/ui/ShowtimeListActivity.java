@@ -43,6 +43,7 @@ public class ShowtimeListActivity extends AppCompatActivity {
             intent.putExtra("theaterId", showtime.getTheaterId());
             intent.putExtra("theaterName", showtime.getTheaterName());
             intent.putExtra("price", showtime.getPrice());
+            intent.putExtra("posterUrl", getIntent().getStringExtra("posterUrl"));
             intent.putStringArrayListExtra("bookedSeats",
                     new java.util.ArrayList<>(showtime.getBookedSeats()));
             startActivity(intent);
